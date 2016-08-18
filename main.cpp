@@ -9,7 +9,7 @@ using namespace std;
 int main() {
     cout << "Hello, World!" << endl;
 
-    task_05_10();
+    task_05_14();
 
     return 0;
 }
