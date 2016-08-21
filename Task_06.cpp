@@ -102,3 +102,24 @@ void task_06_7() {
     cout << setprecision(11) << fixed;
     cout << s << endl;
 }
+
+// Дан многочлен P(x)=anxn + an−1xn−1+ … + a1x + a0 и число x.
+// Вычислите значение этого многочлена, воспользовавшись схемой Горнера.
+void task_06_8() {
+    double n, x, a, p, temp;
+    cin >> n >> x;
+    a = 0;
+    p = 0;
+    temp = 0;
+
+    while (temp < n){
+        cin >> a;
+        p = (p + a) * x;
+        temp++;
+    }
+
+    cin >> a;
+    p += a;
+
+    cout << p << endl;
+}
